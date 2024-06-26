@@ -20,6 +20,10 @@ router.get('/', function(req, res, next) {
 });
 
 
+router.post('/api/sample', function(req, res, next) {
+  res.send('hello world');
+});
+
 router.post('/addTask', function(req, res, next) {
   const taskName = req.body.taskName;
   const createDate = Date.now();
